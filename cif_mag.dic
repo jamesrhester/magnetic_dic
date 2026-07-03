@@ -11,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2026-06-15
+    _dictionary.date              2026-07-03
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -4154,6 +4154,36 @@ save_space_group_magn_ssg_transforms.id
 
 save_
 
+save_space_group_magn_ssg_transforms.pp
+
+    _definition.id                '_space_group_magn_ssg_transforms.Pp'
+    _definition.update            2026-07-03
+    _description.text
+;
+    This item is the matrix equivalent of
+    _space_group_magn_ssg_transforms.Pp_superspace, and specifies the
+    transformation (P,p) of the superspace basis vectors from the
+    current setting (a1,...,a(3+d)) to a reference setting
+    (a1',...,a(3+d)') given by
+    _space_group_magn_ssg_transforms.description. The origin shift is
+    presented in the unitless lattice coordinates of the current
+    setting.  The notation and usage are analogous to those of
+    _space_group_magn_transform.Pp, except that P now represents a
+    superspace point operation and p now represents a superspace
+    translation.
+;
+
+    _name.category_id             space_group_magn_ssg_transforms
+    _name.object_id               Pp
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Matrix
+    _type.dimension               '[]'
+    _type.contents                Real
+    _units.code                   none
+
+save_
+
 save_space_group_magn_ssg_transforms.pp_superspace
 
     _definition.id
@@ -5215,7 +5245,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2026-06-15
+         0.9.9                    2026-07-03
 ;
        Added key to SPACE_GROUP_MAGN, and linked key data names to:
        SPACE_GROUP_MAGN_SSG_TRANSFORMS
@@ -5284,4 +5314,7 @@ save_
 
        2026-06-15: added _atom_sites_moment_fourier.structure_id as linked
        key data name.
+
+       Added _space_group_magn_ssg_transforms.Pp by analogy with
+       _space_group_magn_transforms.Pp.
 ;
