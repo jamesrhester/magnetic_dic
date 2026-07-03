@@ -4168,7 +4168,7 @@ save_space_group_magn_ssg_transforms.pp
     _space_group_magn_ssg_transforms.description. The origin shift is
     presented in the unitless lattice coordinates of the current
     setting.  The notation and usage are analogous to those of
-    _space_group_magn_transform.Pp, except that P now represents a
+    _space_group_magn_transforms.Pp, except that P now represents a
     superspace point operation and p now represents a superspace
     translation.
 ;
