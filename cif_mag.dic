@@ -4172,7 +4172,6 @@ save_space_group_magn_ssg_transforms.pp
     superspace point operation and p now represents a superspace
     translation.
 ;
-
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               Pp
     _type.purpose                 Describe
