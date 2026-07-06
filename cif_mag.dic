@@ -4181,6 +4181,33 @@ save_space_group_magn_ssg_transforms.pp
     _type.contents                Real
     _units.code                   none
 
+    loop_
+      _description_example.case
+      _description_example.detail
+         [
+          [1  0  0  0  0]
+          [0  1  0  0  0]
+          [0  0  1  0  0]
+          [0  0  0  1  0]
+          [0  0  0  0  1]
+         ]
+;
+         Identity transformation
+;
+         [
+          [0  -1    0   0  0   1/4]
+          [1   0    0   0  0  -1/4]
+          [0   0   1/2  0        0]
+          [-1  0    0   0  1   1/4]
+          [0   0  -1/2  1  0     0]
+          [0   0    0   0  0     1]
+         ]
+;
+         Transforms from a supercentered setting to the
+         ISO(3+d)D setting of
+         65.2.43.64.m481.1  Cmmm(0,b1,1/2)000(1,0,g2)0s0.
+;
+
 save_
 
 save_space_group_magn_ssg_transforms.pp_superspace
